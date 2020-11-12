@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto Slab:100,200,300,400,500,600,700,800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #303030;
+    color: #ffffff;
+}
+
+a {
+    color: #ffffff;
+}
+
+h1 {
+    font-family: "Roboto Slab";
+    font-size: 35px;
+    padding-top: 3%;
+    font-size: 40px;
+    color: #e12b3f;
+}
+
+
+/* Interactive Elements section */
+section.main_section {
+    margin: 5% 2% 0% 2%;
+}
+
+section.element {
+    padding: 2% 0% 4% 2%;
+    border-bottom: 1px solid #ffffff;
+    margin: 2% 0% 5% 0%;
+}
+
+h2.section_heading {
+    color: #e12b3f;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    /* padding-left: 2%; */
+    margin: 0%;
+ }
+
+h3.element_heading {
+    color: #f6eccf;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+div.element_content {
+    padding: 0% 2%;
+    margin: 3% 0% 3% 0%;
+}
+
+div.element_code {
+    background-color: #f6eccf;
+    padding: 2% 2%;
+}
+
+h4.code_heading {
+    margin-top: 0%;
+    color: #e12b3f;
+    font-family: "Roboto Slab";
+}
+
+code.code_content {
+    color: #303030;
+    font-family: Consolas, "courier new";
+    font-size: 15px;
+    font-weight: normal;
+}
+
+/* Styling for the intext link */
+a.intext_link {
+    font-weight: bold;
+}
+
+a.intext_link:hover {
+    font-style: italic;
+}
+
+/* Styling for the navigation button */ 
+.button-nav {
+    display: inline-block;
+    padding: 1% 4%;
+    color: #f6eccf;
+    background-color: #303030;
+    border: 2px solid #e12b3f;
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    font-weight: 800;
+    border-radius: 30px;
+}
+
+.button-nav:hover {
+    background-color: #e12b3f;
+    /* color: #303030; */
+    font-weight: 800;
+}
+
+/* Styling for the submit/reset button */
+button {
+    background-color: #f6eccf;
+    padding: 1em 4em;
+    font-size: 12pt;
+    font-weight: 800;
+    margin-right: 5%;
+    border: none;
+    border-radius: 30px;
+}
+
+button:hover {
+    background-color: #e12b3f;
+    color: #303030;
+    transition-property: all;
+    transition-duration: 0.5s;
+    font-weight: 800;
+    border: none;
+}
+
+ /* Styling for the Text Input Field with Label */
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label {
+    width: 100%;
+    padding-bottom: 0.5em;
+}
+
+input[type="text"] {
+    background-color: #282828;
+    border: 1px solid #ffffff;
+    padding: 1%;
+    border-radius: 5px;
+
+    color: white;
+}
+
+input[type=text]:focus {
+    background-color: #393734;
+}
+
+ /* Styling for the Image as a Link */
+img.record {
+    width: 30%;
+}
+
+a>img.record:hover {
+    border: 2px solid #e12b3f;
+}
+
+.imageLink>.product_record:hover {
+    border: 2px solid #e12b3f;
+}

@@ -10,8 +10,178 @@
         <!-- add new google font -->
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
     </head>
 
     <body>
+        <header> <!-- begin of Header nav -->
+            <h1>P03 PORTFOLIO - Style Guide</h1>
+
+            <div class="main_nav">
+                <nav>
+                    <ul>
+                        <li class="menu"><a href="#">HOME</a></li>
+                        <li class="menu"><a href="#">BIO</a></li>
+                        <li class="menu"><a href="#">PROJECT#1</a></li>
+                        <li class="menu"><a href="#">PROJECT#2</a></li>
+                        <li class="menu"><a href="#">CITATIONS</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <p>A style guide can use to start building out our own company web. We contain these elements:</p>
+      
+            <nav>        
+              <a class="intext_link" href="#interactive_elements">Interactive Elements</a>
+              <a class="intext_link" href="#text_elements">Text Elements</a>
+              <a class="intext_link" href="#combined_elements">Combined Elements</a>
+              <a class="intext_link" href="#assemble_brand_components">Assemble Components</a>
+              <a class="intext_link" href="#basic_branding_ideas">Bio</a>
+              <a class="intext_link" href="#basic_branding_ideas">Projects</a>
+              <a class="intext_link" href="#citations">Citations</a>
+            </nav>
+
+        </header> <!-- end of Header nav -->
+
+        <!-- START OF INTERACTIVE ELEMENTS SECTION // -->
+        <section id="interactive_elements" class="main_section">
+            <h2 class="section_heading">Interactive Elements</h2>
+
+            <!-- start of in-text link styling section -->
+            <section class="element">
+                <h3 class="element_heading">In-text link</h3>
+                <div class="element_content">
+                    <p>This is an <a class="intext_link" href="#">in-text link</a>.</p>
+                </div>
+                <div class="element_code">
+                    <h4 class="code_heading">Sample code:</h4>
+                    <code class="code_content">
+                        &lt;p&gt;This is an &lt;a class=&quot;intext_link&quot; href=&quot;#&quot;&gt;in-text link&lt;/a&gt;.&lt;/p&gt;
+                    </code>
+                </div>
+            </section>
+            <!-- end of in-text link styling section -->
+
+            <!-- start of Button Link styling section -->
+            <section class="element">
+                <h3 class="element_heading">Button Link</h3>
+                <div class="element_content">
+                    <a class="button-nav" href="#">Default Button</a>
+                </div>
+                <div class="element_code">
+                    <h4 class="code_heading">Sample code:</h4>
+                    <code class="code_content">
+                        &lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;
+                    </code>
+                </div>
+            </section>
+            <!-- end of Button Link styling section -->
+
+            <!-- start of Submit/Reset Buttons styling section -->
+            <section class="element">
+                <h3 class="element_heading">Submit/Reset Buttons</h3>
+                <div class="element_content">
+                    <form action="/">
+                        <button type="submit" value="Submit">Submit</button>
+                        <button type="reset" value="Reset">Reset</button>
+                    </form>
+                </div>
+                <div class="element_code">
+                    <h4 class="code_heading">Sample code:</h4>
+                    <code class="code_content">
+                        &lt;form action="/"&gt;
+                        <br>&nbsp;
+                        &lt;button type="submit" value="Submit"&gt;Submit&lt;/button&gt;
+                        <br> &nbsp;
+                        &lt;button type="reset" value="Reset"&gt;Reset&lt;/button&gt;
+                        <br>
+                        &lt;/form&gt;
+                    </code>
+                </div>
+            </section>
+            <!-- end of Submit/Reset Buttons styling section -->
+
+            <!-- start of Text Input Field with Label styling section -->
+            <section class="element">
+                <h3 class="element_heading">Text Input Field with Label</h3>
+                <div class="element_content">
+                    <form action="/">
+                        <label class="form_text">Name :</label>
+                        <input type="text" placeholder="Jo Zhou">
+                    </form>
+                </div>
+                <div class="element_code">
+                    <h4 class="code_heading">Sample code:</h4>
+                    <code class="code_content">
+                        &lt;form action="/"&gt;
+                        <br>&nbsp;
+                        &lt;label&gt;Name:&lt;/label&gt;
+                        &lt;input type="text" placeholder="Jo Zhou"&gt;
+                        <br>
+                        &lt;/form&gt;
+                    </code>
+                </div>
+            </section>
+            <!-- end of Text Input Field with Label styling section -->
+
+            <!-- start of Radio Button with Label styling section -->
+            <section class="element">
+                <h3 class="element_heading">Radio Button with Label</h3>
+                <div class="element_content">
+                    <form action="/">
+                        <label class="form_text">Gender :</label>
+			            <label class="form_radio"><input type="radio" name="sex">  Male </label>
+		    	        <label class="form_radio"><input type="radio" name="sex"> Female </label>
+                    </form>
+                </div>
+                <div class="element_code">
+                    <h4 class="code_heading">Sample code:</h4>
+                    <code class="code_content">
+                        &lt;form action="/"&gt;
+                        <br>&nbsp;
+                        &lt;label class="form_text"&gt;Gender :&lt;/label&gt;
+                        <br>&nbsp;
+                        &lt;label class="form_radio"&gt;&lt;input type="radio" name="sex"&gt;  Male &lt;/label&gt;
+                        <br>&nbsp;
+		    	        &lt;label class="form_radio"&gt;&lt;input type="radio" name="sex"&gt; Female &lt;/label&gt;
+                        <br>
+                        &lt;/form&gt;
+                    </code>
+                </div>
+            </section>
+            <!-- end of Radio Button with Label styling section -->
+
+            <!-- start of Image as a Link styling section -->
+            <section class="element">
+                <h3 class="element_heading">Image as a Link</h3>
+                <div class="element_content">
+                    <p>Click the image below to see detail.</p>
+
+                    <figure class="image-container">
+                        <a class="imageLink" href="#">
+                            <img class="record" src = "img/photo.jpg" alt = "photo"/>
+                            <!-- Trovato, G. (2020, March 19). Retrieved September 23, 2020, from https://unsplash.com/photos/PdtApuzR_IQ -->
+                        </a>
+                    </figure>
+               </div>
+
+                <div class="element_code">
+                    <h4 class="code_heading">Sample code:</h4>
+                    <code class="code_content">
+                        &lt;a class="imageLink" href="#"&gt;
+                        <br>&nbsp;
+                        &lt;img class="record" src = "img/record.jpg" alt = "photo"/&gt;
+                        <br>
+                        &lt;/a&gt;
+                    </code>
+                </div>
+            </section>
+            <!-- end of Image as a Link styling section -->
+
+        </section>
+        <!-- END OF INTERACTIVE ELEMENTS SECTION // -->
+
+        
+
     </body>
 </html>

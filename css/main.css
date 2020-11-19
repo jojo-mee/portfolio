@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #303030;
+    color: #F6ECCF;
+}
+
+a {
+    color: #F6ECCF;
+}
+
+
+/* head section */
+header{
+    background-color: #E12B3F;
+    padding: 2%;
+    padding-bottom: 8em;
+}
+
+h1 {
+    margin-top: 1%;
+    font-family: "PT Mono";
+    padding-top: 1%;
+    font-size: 35px;
+    color: #F6ECCF;
+    font-weight: normal;
+    width: 100%;
+
+    border-top: 1px solid #F6ECCF;
+
+    text-align: end;
+}
+
+/* Styling for the Main Navigation */
+div.main_nav{
+    margin: 6% 0%
+}
+
+nav>ul{
+    padding:0%;
+    margin:auto;
+    width: 100%;
+}
+li.menu{
+    padding:1% 2%;
+    height:100%;
+    display: flex;
+
+    transition-property: background-color; 
+    transition-duration: 1s;
+}
+
+li.menu:hover a{
+    background-color: #303030;
+}
+
+li.menu>a{
+    /* width:100%; */
+    padding-right: 3%;
+    font-family: "PT Serif Caption";
+    font-weight: bold;
+    font-size: 70px;
+    text-decoration:none;
+    transition-property: color; 
+    transition-duration: 1s;
+}
+
+/* scroll down icon animation */
+.container {
+    position: absolute;
+    left: 50%;
+    top: auto;
+    width: 24px;
+    height: 24px;
+}
+  
+  .chevron {
+    position: absolute;
+    width: 28px;
+    height: 8px;
+    opacity: 0;
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move 3s ease-out infinite;
+  }
+  
+  .chevron:first-child {
+    animation: move 3s ease-out 1s infinite;
+  }
+  
+  .chevron:nth-child(2) {
+    animation: move 3s ease-out 2s infinite;
+  }
+  
+  .chevron:before,
+  .chevron:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 51%;
+    background: #fff;
+  }
+  
+  .chevron:before {
+    left: 0;
+    transform: skew(0deg, 30deg);
+  }
+  
+  .chevron:after {
+    right: 0;
+    width: 50%;
+    transform: skew(0deg, -30deg);
+  }
+  
+  @keyframes move {
+    25% {
+      opacity: 1;
+  
+    }
+    33% {
+      opacity: 1;
+      transform: translateY(30px);
+    }
+    67% {
+      opacity: 1;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+    }
+  }
+  @keyframes pulse {
+    to {
+      opacity: 1;
+    }
+  }
+
+/* BIO/ABOUT SECTION */
+.main_section{
+    padding: 2%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.element{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-top: 2%;
+}
+
+h2.element_heading{
+    width: 100%;
+    color: #fff;
+    font-family: "PT Mono";
+    font-size: 24px;
+
+    margin-bottom: 1%;
+}
+h2.element_heading_end{
+    width: 100%;
+    color: #fff;
+    font-family: "PT Mono";
+    text-align: end;
+    font-size: 24px;
+
+    margin-top: 0;
+}
+
+.element_content{
+    width: 80%;
+    font-family: "PT Mono";
+    font-size: 18px;
+}
+.highlight{
+    background-color: #E12B3F;
+}
+
+/* Styling for the project */
+section#project_elements{
+    margin-top: 5%;
+}
+
+div.project_section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+div.project{
+    width: 45%;
+}

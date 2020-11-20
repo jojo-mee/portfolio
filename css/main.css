@@ -194,6 +194,8 @@ div.project_section{
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
+
+    margin-top: 4%;
 }
 
 div.project1{
@@ -265,6 +267,8 @@ p.project_text{
     width: 100%;
     justify-content: space-evenly;
     padding-bottom: 5%;
+
+    margin-top: 4%;
 
     /* border: 1px solid wheat; */
 }

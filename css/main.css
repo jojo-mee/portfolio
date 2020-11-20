@@ -195,6 +195,60 @@ div.project_section{
     justify-content: center;
 }
 
-div.project{
+div.project1{
     width: 45%;
+    padding: 1% 2%;
+    background-color: #F6ECCF;
+}
+div.project2{
+    width: 45%;
+    padding: 1% 2%;
+    background-color:#393734;
+}
+
+h3{
+    color: #E12B3F;
+    font-family: "PT Mono";
+}
+
+.project_pre{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.brief_img{
+    width: 100%;
+}
+
+p.project_text{
+    color: #E12B3F;
+    font-family: "PT Serif Caption";
+    width: 85%;
+    text-align: justify;
+}
+
+/* Styling for the navigation button */ 
+.button-nav {
+    width: 85%;
+    display: inline-block;
+    padding: 2% 0%;
+    color: #f6eccf;
+    background-color: #303030;
+    border: 2px solid #e12b3f;
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    font-weight: 800;
+
+    text-align: center;
+    margin: 4% 0%;
+}
+
+.button-nav:hover {
+    background-color: #e12b3f;
+    /* color: #303030; */
+    font-weight: 800;
 }

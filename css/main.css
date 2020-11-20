@@ -184,7 +184,8 @@ h2.element_heading_end{
 }
 
 /* Styling for the project */
-section#project_elements{
+section#project_elements,
+section#contact_elements{
     margin-top: 5%;
 }
 
@@ -199,11 +200,15 @@ div.project1{
     width: 45%;
     padding: 1% 2%;
     background-color: #F6ECCF;
+
+    min-width: 15em;
 }
 div.project2{
     width: 45%;
     padding: 1% 2%;
     background-color:#393734;
+
+    min-width: 15em;
 }
 
 h3{
@@ -251,4 +256,40 @@ p.project_text{
     background-color: #e12b3f;
     /* color: #303030; */
     font-weight: 800;
+}
+
+/* Styling for the contact */ 
+.contact_container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-bottom: 5%;
+
+    /* border: 1px solid wheat; */
+}
+
+.contact-col {
+    /* border: 1px solid yellow; */
+
+    width: 20%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    min-width: 15em;
+}
+
+.contact_img {
+    width: 40%;
+    /* border: 1px solid blue; */
+}
+
+.contact-icon{
+    width: 100%;
+}
+
+footer{
+    text-align: center;
 }

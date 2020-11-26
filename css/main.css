@@ -273,27 +273,42 @@ p.project_text{
     /* border: 1px solid wheat; */
 }
 
-.contact-col {
-    /* border: 1px solid yellow; */
-
-    width: 20%;
-    text-align: center;
+/* Styling for the Text Input Field with Label */
+ 
+form {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-
-    min-width: 15em;
 }
 
-.contact_img {
-    width: 40%;
-    /* border: 1px solid blue; */
-}
-
-.contact-icon{
+label {
     width: 100%;
+    padding-bottom: 0.5em;
+    width: 80%;
+    font-family: "PT Mono";
+    font-size: 18px;
 }
 
+input[type="text"],
+textarea {
+    background-color: #454545;
+    border: 1px solid #ffffff;
+    padding: 1%;
+    border-radius: 5px;
+
+    color: white;
+}
+
+input[type=text]:focus {
+    background-color: #393734;
+}
+
+::placeholder {
+    color: white;
+    font-family: "PT Mono";
+  }
+
+
+/* style for footer */
 footer{
     text-align: center;
 }

@@ -74,6 +74,10 @@ li.project_heading>span{
     div.project>ul{
         padding: 0%;
     }
+
+    li.menu>a{
+        font-size: 20px;
+    }
 }
 @media only screen and (max-width:450px) {
     li.project_heading{
@@ -119,10 +123,20 @@ div.process_step{
     justify-content: space-evenly;
 
     width: 85%;
+    margin-bottom: 3%;
 }
 
 .process_showcase{
     width: 45%;
     min-width: 12em;
+}
+
+.process_showcase>.project_text{
+    color: #303030;
+    font-size: 15px;
+}
+
+.step>p.challenge{
+    margin-bottom: 0%;
 }
 

@@ -100,11 +100,13 @@ section#display{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    /* border: 1px solid green; */
 }
 
 .project_showcase{
     width: 45%;
     min-width: 12em;
+    flex-grow: 1;
 }
 
 figure.project_img{

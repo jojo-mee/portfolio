@@ -1,0 +1,128 @@
+header{
+    background-color: #F6ECCF;
+}
+
+body {
+    background-color: #F6ECCF;
+    color: #303030;
+}
+
+/* navagation style layout */
+div.project_nav,
+div.project_nav>nav{
+    width: 100%;
+}
+
+div.project_nav>nav>ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding:0%;
+    margin:auto;
+
+    border-top: 1px solid #303030;
+}
+
+li.menu>a:hover{
+    color: #F6ECCF;
+    background-color: #303030;
+}
+li.menu>a{
+    margin-top: 1%;
+    font-family: "PT Mono";
+    padding-top: 1%;
+    font-size: 35px;
+    color: #303030;
+    font-weight: normal;
+    width: 100%;
+
+    text-align: center;
+}
+
+li.menu{
+    margin-top: 1em;
+    padding: 0%;
+    /* border: 1px solid royalblue; */
+}
+
+
+/* heading layout */
+div.project{
+margin: 6% 0%;
+}
+
+li.project_heading{
+    font-family: "PT Serif Caption";
+    font-weight: bold;
+    font-size: 70px;
+    color: #F6ECCF;
+
+    display: flex;
+}
+
+li.project_heading>span{
+    background-color: #E12B3F;
+    padding-right: 3%;
+}
+
+@media only screen and (max-width:675px) {
+    li.project_heading{
+        font-size: 50px;
+    }
+
+    div.project>ul{
+        padding: 0%;
+    }
+}
+@media only screen and (max-width:450px) {
+    li.project_heading{
+        font-size: 30px;
+    }
+}
+
+/* color adjust for project page */
+h1.section_heading {
+    color: #303030;
+    border-top: 1px solid #303030;
+}
+
+h2.element_heading{
+    color:#E12B3F;
+}
+
+/* display section layout */
+section#display{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.project_showcase{
+    width: 45%;
+    min-width: 12em;
+}
+
+figure.project_img{
+    margin: 0%;
+}
+
+p.project_text{
+    margin: 1% 0%;
+    text-align: left;
+}
+
+/* precess section layout */
+div.process_step{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    width: 85%;
+}
+
+.process_showcase{
+    width: 45%;
+    min-width: 12em;
+}
+

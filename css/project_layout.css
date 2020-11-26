@@ -107,6 +107,7 @@ section#display{
     width: 45%;
     min-width: 12em;
     flex-grow: 1;
+    padding: 2%;
 }
 
 figure.project_img{
@@ -131,6 +132,8 @@ div.process_step{
 .process_showcase{
     width: 45%;
     min-width: 12em;
+    flex-grow: 1;
+    padding: 1%;
 }
 
 .process_showcase>.project_text{

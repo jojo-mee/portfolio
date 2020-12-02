@@ -1,0 +1,69 @@
+div.element_code {
+    background-color: #f6eccf;
+    padding: 2% 2%;
+
+    margin: 2% 0%;
+}
+
+h4.code_heading {
+    margin-top: 0%;
+    color: #e12b3f;
+    font-family: "Roboto Slab";
+}
+
+code.code_content {
+    width: 100%;
+
+    color: #303030;
+    font-family: Consolas, "courier new";
+    font-size: 17px;
+    font-weight: normal;
+
+    margin-bottom: 2%;
+}
+
+.element_content,
+.element_code{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/* Styling for the intext link */
+a.intext_link {
+    font-weight: bold;
+}
+
+a.intext_link:hover {
+    font-style: italic;
+}
+
+/* Styling for the submit/reset button */
+button {
+    background-color: #f6eccf;
+    padding: 1em 4em;
+    font-size: 12pt;
+    font-weight: 800;
+    margin-top: 3%;
+    margin-right: 3%;
+    border: none;
+}
+
+button:hover {
+    background-color: #e12b3f;
+    color: #303030;
+    transition-property: all;
+    transition-duration: 0.5s;
+    font-weight: 800;
+    border: none;
+} 
+
+/* Styling for the Image as a Link */
+a>img.brief_img:hover {
+    border: 2px solid #e12b3f;
+}
+
+.imageLink>.brief_img:hover {
+    border: 2px solid #e12b3f;
+}

@@ -4,18 +4,18 @@
         <title>P03 Portfolio - Style Guide</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/main.css" title="sytle" type="text/css" media="all"/>
+        <link rel="stylesheet" href="css/style_guide.css" title="sytle" type="text/css" media="all"/>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0s">
 
         <!-- add new google font -->
-        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=PT_Mono' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=PT+Serif+Caption' rel='stylesheet'>
     </head>
 
     <body>
         <header> <!-- begin of Header nav -->
-            <h1>P03 PORTFOLIO - Style Guide</h1>
+            <h1 class="section_heading">P03 PORTFOLIO - Style Guide</h1>
 
             <div class="main_nav">
                 <nav>
@@ -44,16 +44,16 @@
 
         <!-- START OF INTERACTIVE ELEMENTS SECTION // -->
         <section id="interactive_elements" class="main_section">
-            <h2 class="section_heading">Interactive Elements</h2>
+            <h1 class="section_heading">Interactive Elements</h1>
 
             <!-- start of in-text link styling section -->
             <section class="element">
-                <h3 class="element_heading">In-text link</h3>
+                <h2 class="element_heading">In-text link</h2>
                 <div class="element_content">
                     <p>This is an <a class="intext_link" href="#">in-text link</a>.</p>
                 </div>
                 <div class="element_code">
-                    <h4 class="code_heading">Sample code:</h4>
+                    <h3>Sample code:</h3>
                     <code class="code_content">
                         &lt;p&gt;This is an &lt;a class=&quot;intext_link&quot; href=&quot;#&quot;&gt;in-text link&lt;/a&gt;.&lt;/p&gt;
                     </code>
@@ -63,12 +63,12 @@
 
             <!-- start of Button Link styling section -->
             <section class="element">
-                <h3 class="element_heading">Button Link</h3>
+                <h2 class="element_heading">Button Link</h2>
                 <div class="element_content">
                     <a class="button-nav" href="#">Default Button</a>
                 </div>
                 <div class="element_code">
-                    <h4 class="code_heading">Sample code:</h4>
+                    <h3>Sample code:</h3>
                     <code class="code_content">
                         &lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;
                     </code>
@@ -78,7 +78,7 @@
 
             <!-- start of Submit/Reset Buttons styling section -->
             <section class="element">
-                <h3 class="element_heading">Submit/Reset Buttons</h3>
+                <h2 class="element_heading">Submit/Reset Buttons</h2>
                 <div class="element_content">
                     <form action="/">
                         <button type="submit" value="Submit">Submit</button>
@@ -86,7 +86,7 @@
                     </form>
                 </div>
                 <div class="element_code">
-                    <h4 class="code_heading">Sample code:</h4>
+                    <h3>Sample code:</h3>
                     <code class="code_content">
                         &lt;form action="/"&gt;
                         <br>&nbsp;
@@ -102,7 +102,7 @@
 
             <!-- start of Text Input Field with Label styling section -->
             <section class="element">
-                <h3 class="element_heading">Text Input Field with Label</h3>
+                <h2 class="element_heading">Text Input Field with Label</h2>
                 <div class="element_content">
                     <form action="/">
                         <label class="form_text">Name :</label>
@@ -110,7 +110,7 @@
                     </form>
                 </div>
                 <div class="element_code">
-                    <h4 class="code_heading">Sample code:</h4>
+                    <h3>Sample code:</h3>
                     <code class="code_content">
                         &lt;form action="/"&gt;
                         <br>&nbsp;
@@ -125,7 +125,7 @@
 
             <!-- start of Radio Button with Label styling section -->
             <section class="element">
-                <h3 class="element_heading">Radio Button with Label</h3>
+                <h2 class="element_heading">Radio Button with Label</h2>
                 <div class="element_content">
                     <form action="/">
                         <label class="form_text">Gender :</label>
@@ -134,7 +134,7 @@
                     </form>
                 </div>
                 <div class="element_code">
-                    <h4 class="code_heading">Sample code:</h4>
+                    <h3>Sample code:</h3>
                     <code class="code_content">
                         &lt;form action="/"&gt;
                         <br>&nbsp;
@@ -152,20 +152,20 @@
 
             <!-- start of Image as a Link styling section -->
             <section class="element">
-                <h3 class="element_heading">Image as a Link</h3>
+                <h2 class="element_heading">Image as a Link</h2>
                 <div class="element_content">
                     <p>Click the image below to see detail.</p>
 
-                    <figure class="image-container">
+                    <figure class="project_img">
                         <a class="imageLink" href="#">
-                            <img class="record" src = "img/photo.jpg" alt = "photo"/>
+                            <img class="brief_img" src = "img/info.jpg" alt = "photo"/>
                             <!-- Trovato, G. (2020, March 19). Retrieved September 23, 2020, from https://unsplash.com/photos/PdtApuzR_IQ -->
                         </a>
                     </figure>
                </div>
 
                 <div class="element_code">
-                    <h4 class="code_heading">Sample code:</h4>
+                    <h3>Sample code:</h3>
                     <code class="code_content">
                         &lt;a class="imageLink" href="#"&gt;
                         <br>&nbsp;
@@ -182,24 +182,22 @@
 
         <!-- START OF TEXT ELEMENTS SECTION // -->
         <section id="text_elements" class="main_section">
-            <h2 class="section_heading">Text Elements</h2>
+            <h1 class="section_heading">Text Elements</h1>
 
             <!-- start of Headings section -->
             <section class="element">
-                <h3 class="element_heading">Headings</h3>
+                <h2 class="element_heading">Headings</h2>
                 <div class="element_content">
-                    <h1>heading1: for top title</h1>
-                    <h2 class="section_heading">heading2: for section title</h2>
-                    <h3 class="element_heading">heading3: for element title</h3>
-                    <h4 class="code_heading">heading4: for sub element title</h4>
+                    <h1 class="section_heading">heading1: for top title</h1>
+                    <h2 class="element_heading">heading2: for section title</h2>
+                    <h3>heading3: for element title</h3>
                 </div>
                 <div class="element_code">
-                    <h4 class="code_heading">Sample code:</h4>
+                    <h3>Sample code:</h3>
                     <code class="code_content">
-                        &lt;h1&gt;heading1&lt;/h1&gt; <br>
-                        &lt;h2 class="section_heading"&gt;heading2&lt;/h2&gt; <br>
-                        &lt;h3 class="element_heading"&gt;heading3&lt;/h3&gt; <br>
-                        &lt;h4 class="code_heading"&gt;heading4&lt;/h4&gt;
+                        &lt;h1 class="section_heading"&gt;heading1&lt;/h1&gt; <br>
+                        &lt;h2 class="element_heading"&gt;heading2&lt;/h2&gt; <br>
+                        &lt;h3&gt;heading3&lt;/h3&gt; <br>
                     </code>
                 </div>
             </section>
@@ -207,14 +205,14 @@
 
             <!-- start of Paragraphs section -->
             <section class="element">
-                <h3 class="element_heading">Paragraphs</h3>
+                <h2 class="element_heading">Paragraphs</h2>
                 <div class="element_content">
                     <p>This is paragraph. This is paragraph. This is paragraph. This is paragraph. This is paragraph. This is paragraph. This is paragraph.
                         This is paragraph. This is paragraph. This is paragraph. This is paragraph. This is paragraph. This is paragraph. This is paragraph.
                     </p>
                 </div>
                 <div class="element_code">
-                    <h4 class="code_heading">Sample code:</h4>
+                    <h3>Sample code:</h3>
                     <code class="code_content">
                         &lt;p&gt;This is paragraph. This is paragraph. This is paragraph. This is paragraph. This is paragraph. This is paragraph. This is paragraph.
                             This is paragraph. This is paragraph. This is paragraph. This is paragraph. This is paragraph. This is paragraph. This is paragraph.
@@ -226,7 +224,7 @@
 
             <!-- start of Numbered Lists section -->
             <section class="element">
-                <h3 class="element_heading">Numbered Lists</h3>
+                <h2 class="element_heading">Numbered Lists</h2>
                 <div class="element_content">
                     <ol>
                         <li>disc.1</li>
@@ -235,7 +233,7 @@
                     </ol>
                 </div>
                 <div class="element_code">
-                    <h4 class="code_heading">Sample code:</h4>
+                    <h3>Sample code:</h3>
                     <code class="code_content">
                         &lt;ol&gt; <br>&nbsp;
                         &lt;li&gt;disc.1&lt;/li&gt; <br>&nbsp;
@@ -252,7 +250,7 @@
 
         <!-- START OF COMBINED ELEMENTS SECTION // -->
         <section id="combined_elements" class="main_section">
-            <h2 class="section_heading">Combined Elements</h2>
+            <h1 class="section_heading">Combined Elements</h1>
 
             <!-- start of Main Navigation section -->
             <section class="element">
@@ -291,7 +289,7 @@
 
         <!-- START OF Assemble Components SECTION // -->
         <section id="assemble_components" class="main_section">
-            <h2 class="section_heading">Assemble Components</h2>
+            <h1 class="section_heading">Assemble Components</h1>
 
             <section class="element">
                 <h3 class="element_heading">Fonts</h3>
@@ -340,7 +338,7 @@
 
         <!-- START OF BIO SECTION // -->
         <section id="combined_elements" class="main_section">
-            <h2 class="section_heading">Bio</h2>
+            <h1 class="section_heading">Bio</h1>
 
             <section class="element">
                 <h3 class="element_heading">YINING ZHOU</h3>
@@ -365,7 +363,7 @@
 
         <!-- START OF PROJECTS SECTION // -->
         <section id="combined_elements" class="main_section">
-            <h2 class="section_heading">Projects</h2>
+            <h1 class="section_heading">Projects</h1>
 
             <!-- start of project1 section -->
             <section class="element">
@@ -401,7 +399,7 @@
 
         <!-- START OF Citations SECTION // -->
         <section id="citations" class="main_section">
-            <h2 class="section_heading">Citations</h2>
+            <h1 class="section_heading">Citations</h1>
 
             <ul>   
                 <li>Indian Type Foundry. Designer. (n.d.). <strong>Poppins [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Poppins?query=Poppins&selection.family=Roboto#standard-styles">https://fonts.google.com/specimen/Poppins?query=Poppins&selection.family=Roboto#standard-styles</a></li>

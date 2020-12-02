@@ -7,6 +7,10 @@ body {
     color: #303030;
 }
 
+.highlight{
+    color: #F6ECCF;
+}
+
 /* navagation style layout */
 div.project_nav,
 div.project_nav>nav{

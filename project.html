@@ -11,11 +11,14 @@
         <!-- add new google font -->
         <link href='https://fonts.googleapis.com/css?family=PT_Mono' rel='stylesheet'>
         <link href='//fonts.googleapis.com/css?family=PT+Serif+Caption' rel='stylesheet'>
+
+        <!-- add library -->
+        <link href="css/aos.css" rel="stylesheet">
     </head>
 
     <body>
-        <header> <!-- begin of Header nav -->
-
+        <header> 
+            <!-- begin of Header nav -->
             <div class="project_nav">
                 <nav>
                     <ul>
@@ -26,13 +29,31 @@
                     </ul>
                 </nav>
             </div>
+            <!-- end of Header nav -->
+
+            <!-- begin of mobile nav -->
+            <div class="mobile_menu">
+                <div id="main">
+                    <span onclick="openNav()">&#9776; Menu</span>
+                </div>
+
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">HOME</a>
+                    <a href="project.html">PROJECT#1</a>
+                    <a href="project2.html">PROJECT#2</a>
+                    <a href="index.html#contact_elements">CONTACT</a>
+                </div>
+            </div>
+            <!-- end of mobile nav -->
 
             <div class="project">
                 <ul>
-                    <li class="project_heading"><span class="test" data-text="PROJECTS#1">PROJECTS#1</span></li>
+                    <li class="project_heading"><span>PROJECTS#1</span></li>
                     <li class="project_heading"><span class="test" data-text="INFOGRAPHICS">INFOGRAPHICS</span></li>
                 </ul>
             </div>
+
 
         </header> <!-- end of Header nav -->
 
@@ -58,7 +79,7 @@
 
         <!-- START OF OVERVIEW SECTION // -->
         <section id="overview" class="main_section">
-            <h1 class="section_heading">OVERVIEW:</h1>
+            <h1 class="section_heading" data-aos="fade-left">OVERVIEW:</h1>
 
             <section class="element">
                 <h2 class="element_heading">CONTEXT</h2>
@@ -85,7 +106,7 @@
 
         <!-- START OF PROCESS SECTION // -->
         <section id="process" class="main_section">
-            <h1 class="section_heading">PROCESS:</h1>
+            <h1 class="section_heading" data-aos="fade-left">PROCESS:</h1>
 
             <!-- start of step 1 section -->
             <section class="element step">
@@ -207,7 +228,7 @@
 
         <!-- START OF TAKEAWAYS SECTION // -->
         <section id="takeaways" class="main_section">
-            <h1 class="section_heading">TAKEAWAYS:</h1>
+            <h1 class="section_heading" data-aos="fade-left">TAKEAWAYS:</h1>
 
             <section class="element">
                 <h2 class="element_heading">Goal and Requirements Oriented</h2>
@@ -236,7 +257,18 @@
         <footer>
             <h4> @ JO ZHOU</h4>
             <p> All COPYRIGHT RESERVED.</p>
+            <p class="footerFont">
+                <a class="footerLink" href="style_guide.html">Style Guide</a>
+                <span> &#183;</span> 
+                <a class="footerLink" href="citations.html">Citations</a>
+                <span> &#183;</span> 
+                <a class="footerLink" href="citations.html">GitHub</a>
+            </p>
         </footer>
+
+        <script src="js/aos.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="js/main.js"></script>
         
     </body>
 

@@ -5,6 +5,8 @@
 body {
     background-color: #303030;
     color: #F6ECCF;
+
+    overflow-x: hidden;
 }
 
 a {
@@ -52,7 +54,7 @@ li.menu{
     transition-duration: 1s;
 }
 
-li.menu:hover a{
+li.menu>a:hover{
     background-color: #303030;
 }
 
@@ -63,7 +65,7 @@ li.menu>a{
     font-weight: bold;
     font-size: 70px;
     text-decoration:none;
-    transition-property: color; 
+    transition-property: background-color; 
     transition-duration: 1s;
 }
 
@@ -211,6 +213,13 @@ div.project2{
     background-color:#454545;
 
     min-width: 15em;
+}
+
+@media only screen and (max-width:517px){
+    div.project1,
+    div.project2{
+        width: 90%;
+    }
 }
 
 h3{

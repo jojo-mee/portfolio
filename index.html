@@ -13,19 +13,22 @@
         <link href='https://fonts.googleapis.com/css?family=PT+Serif+Caption' rel='stylesheet'>
 
         <!-- add library -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="css/aos.css" rel="stylesheet">
     </head>
 
     <body>
         <header> <!-- begin of Header nav -->
-            <h1 class="section_heading">Jo Zhou:</h1>
+            <h1 class="section_heading" data-aos="fade-left">Jo Zhou:</h1>
 
             <div class="main_nav">
                 <nav>
                     <ul>
-                        <li class="menu"><a href="#about_elements">ABOUT</a></li>
-                        <li class="menu"><a href="#project_elements">PROJECTS</a></li>
-                        <li class="menu"><a href="#contact_elements">CONTACT</a></li>
+                        <li class="menu" data-aos="fade-right" data-aos-offset="300" 
+                        data-aos-easing="ease-in-sine" data-aos-duration="1300"><a href="#about_elements">ABOUT</a></li>
+                        <li class="menu" data-aos="fade-right" data-aos-offset="300" 
+                        data-aos-easing="ease-in-sine" data-aos-duration="1400"><a href="#project_elements">PROJECTS</a></li>
+                        <li class="menu" data-aos="fade-right" data-aos-offset="300" 
+                        data-aos-easing="ease-in-sine" data-aos-duration="1500"><a href="#contact_elements">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
@@ -44,7 +47,7 @@
         <section id="about_elements" class="main_section">
             <h1 class="section_heading" data-aos="fade-left">About:</h1>
 
-            <section class="element">
+            <section class="element" data-aos="fade-down">
                 <h2 class="element_heading">HELLO THERE! {</h2>
                 <p class="element_content">My name is <span class="highlight">Jo Zhou</span>. An <span class="highlight">Interactive Art Designer</span>. 
                     This is my third year in Simon Fraser University. I am an open-minded, 
@@ -55,7 +58,7 @@
                 <h2 class="element_heading_end">; }</h2>
             </section>
 
-            <section class="element">
+            <section class="element" data-aos="fade-down">
                 <h2 class="element_heading">EDUCATION {</h2>
                 <p class="element_content"><span class="highlight">Simon Fraser University</span>
                 </p>
@@ -69,7 +72,7 @@
                 <h2 class="element_heading_end">; }</h2>
             </section>
 
-            <section class="element">
+            <section class="element" data-aos="fade-down">
                 <h2 class="element_heading">INTEREST OF EMPLOYMENT {</h2>
                 <p class="element_content">I would like to work for online based companies including new media companies, 
                     as well as advertising companies.
@@ -81,7 +84,7 @@
                 <h2 class="element_heading_end">; }</h2>
             </section>
 
-            <section class="element">
+            <section class="element" data-aos="fade-down">
                 <h2 class="element_heading">SKILLS {</h2>
                 <p class="element_content">Language: English (Proficiency in speaking and writing), Chinese (Native)
                 </p>
@@ -99,10 +102,12 @@
 
         <!-- START OF PROJECT SECTION // -->
         <section id="project_elements" class="main_section">
-            <h1 class="section_heading">Project:</h1>
+            <h1 class="section_heading" data-aos="fade-left">Project:</h1>
 
             <div class="project_section">
-                <div class="project1">
+                <div class="project1" data-aos="fade-right"
+                data-aos-offset="500"
+                data-aos-duration="500">
                     <h3>&lt;Project#1&gt; Graphic </h3>
                     <div class="project_pre">
                         <figure class="project_img">
@@ -114,7 +119,9 @@
                     </div>
                 </div>
 
-                <div class="project2">
+                <div class="project2" data-aos="fade-left"
+                data-aos-offset="500"
+                data-aos-duration="500">
                     <h3>&lt;Project#2&gt; Web</h3>
                     <div class="project_pre">
                         <figure class="project_img">
@@ -132,12 +139,14 @@
 
         <!-- START OF CONTACT SECTION // -->
         <section id="contact_elements" class="main_section">
-            <h1 class="section_heading">Contact:</h1>
+            <h1 class="section_heading" data-aos="fade-left">Contact:</h1>
                 
                 <!-- start of leave message section -->
                 <div class="fill_info">
                     <h2 class="element_heading">GET IN TOUCH</h2>
-                    <p class="element_content">If you are looking for an interactive designer parter, leave a message and let’s work together.
+                    <p class="element_content"> <span class="test" data-text="If you are looking for an 
+                        interactive designer parter, leave a message and let’s work together.">If you are looking for an 
+                        interactive designer parter, leave a message and let’s work together.</span>
                     </p>
 
                     <form>
@@ -182,9 +191,9 @@
         </footer>
 
     <!-- <script src="js/main.js"></script> -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
-        AOS.init();
-    </script>
+    <script src="js/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/main.js"></script>
     </body>
 
 </html>

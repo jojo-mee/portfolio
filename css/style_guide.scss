@@ -1,0 +1,174 @@
+/* sign variable */
+$red: #E12B3F;
+$black: #303030;
+$wheat: #F6ECCF;
+@mixin default-type{
+    display: flex;
+	flex-wrap: wrap;
+}
+
+/* Styling for the intext link */
+/* Styling for the submit/reset button */
+/* Styling for the Image as a Link */
+/* navagation style layout */
+/* Styling for the Fonts*/
+/* Styling for the Colour Palettes*/
+div.element_code {
+	background-color: $wheat;
+	padding: 2% 2%;
+	margin: 2% 0%;
+}
+h4.code_heading {
+	margin-top: 0%;
+	color: $red;
+	font-family: "Roboto Slab";
+}
+code.code_content {
+	width: 100%;
+	color: $black;
+	font-family: Consolas, "courier new";
+	font-size: 17px;
+	font-weight: normal;
+	margin-bottom: 2%;
+}
+.element_content {
+	width: 80%;
+	@include default-type;
+	justify-content: flex-start;
+}
+.element_code {
+	width: 80%;
+	@include default-type;
+	justify-content: flex-start;
+}
+a.intext_link {
+	font-weight: bold;
+	&:hover {
+		font-style: italic;
+	}
+}
+button {
+	background-color: $wheat;
+	padding: 1em 4em;
+	font-size: 12pt;
+	font-weight: 800;
+	margin-top: 3%;
+	margin-right: 3%;
+	border: none;
+	&:hover {
+		background-color: $red;
+		color: $black;
+		transition-property: all;
+		transition-duration: 0.5s;
+		font-weight: 800;
+		border: none;
+	}
+}
+a {
+	>img.brief_img {
+		&:hover {
+			border: 2px solid $red;
+		}
+	}
+}
+.imageLink {
+	>.brief_img {
+		&:hover {
+			border: 2px solid $red;
+		}
+	}
+}
+div.project_nav {
+	background-color: $wheat;
+	color: $black;
+	width: 100%;
+	>nav {
+		background-color: $wheat;
+		color: $black;
+		width: 100%;
+		>ul {
+			width: 100%;
+			@include default-type;
+			justify-content: space-evenly;
+			padding: 0%;
+			margin: auto;
+			border-top: 1px solid $black;
+			>li.menu {
+				>a {
+					&:hover {
+						color: $wheat;
+						background-color: $black;
+					}
+					margin-top: 1%;
+					font-family: "PT Mono";
+					padding-top: 1%;
+					font-size: 35px;
+					color: $black;
+					font-weight: normal;
+					width: 100%;
+					text-align: center;
+				}
+				margin-top: 1em;
+				padding: 0%;
+			}
+		}
+	}
+}
+p.PT_Mono {
+	font-family: "PT Mono";
+	font-size: 23px;
+}
+p.PT_Serif_Caption {
+	font-family: "PT Serif Caption";
+	font-size: 25px;
+}
+.element_content_color {
+	padding: 0% 2%;
+	margin: 3% 0% 3% 0%;
+	@include default-type;
+	justify-content: flex-start;
+	align-items: center;
+}
+.color {
+	width: 100%;
+	margin: 0% 8% 5% 0%;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+.color_fill1 {
+	width: 25%;
+	border: 1px solid #ffffff;
+	margin: 0% 8% 0% 0%;
+}
+h3.color_text {
+	text-align: center;
+}
+.color_explain {
+	width: 70%;
+}
+.color_fill2 {
+	width: 25%;
+	background-color: $wheat;
+	margin: 0% 8% 0% 0%;
+	>h3.color_text {
+		color: $black;
+	}
+}
+.color_fill3 {
+	width: 25%;
+	background-color: $red;
+	margin: 0% 8% 0% 0%;
+	>h3.color_text {
+		color: $wheat;
+	}
+}
+.color_fill4 {
+	width: 25%;
+	background-color: #ffffff;
+	margin: 0% 8% 0% 0%;
+	>h3.color_text {
+		color: $black;
+	}
+}

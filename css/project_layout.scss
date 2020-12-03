@@ -1,0 +1,194 @@
+/* sign variable */
+$red: #E12B3F;
+$black: #303030;
+$wheat: #F6ECCF;
+@mixin default-type{
+    display: flex;
+	flex-wrap: wrap;
+}
+
+/* navagation style layout */
+/* heading layout */
+/* mobile nav */
+/* color adjust for project page */
+/* display section layout */
+/* precess section layout */
+header {
+	background-color: $wheat;
+}
+body {
+	background-color: $wheat;
+	color: $black;
+}
+.highlight {
+	color: $wheat;
+}
+div.project_nav {
+	width: 100%;
+	>nav {
+		width: 100%;
+		>ul {
+			width: 100%;
+			@include default-type;
+			justify-content: space-evenly;
+			padding: 0%;
+			margin: auto;
+			border-top: 1px solid $black;
+		}
+	}
+}
+li.menu {
+	>a {
+		&:hover {
+			color: $wheat;
+			background-color: $black;
+		}
+		margin-top: 1%;
+		font-family: "PT Mono";
+		padding-top: 1%;
+		font-size: 35px;
+		color: $black;
+		font-weight: normal;
+		width: 100%;
+		text-align: center;
+	}
+	margin-top: 1em;
+	padding: 0%;
+}
+div.project {
+	margin: 6% 0%;
+}
+li.project_heading {
+	font-family: "PT Serif Caption";
+	font-weight: bold;
+	font-size: 70px;
+	color: $wheat;
+	display: flex;
+	>span {
+		background-color: $red;
+		padding-right: 3%;
+	}
+}
+.mobile_menu {
+	display: none;
+}
+h1.section_heading {
+	color: $black;
+	border-top: 1px solid $black;
+}
+h2.element_heading {
+	color: $red;
+}
+section#display {
+	@include default-type;
+	justify-content: space-evenly;
+}
+.project_showcase {
+	width: 45%;
+	min-width: 12em;
+	flex-grow: 1;
+	padding: 2%;
+}
+figure.project_img {
+	margin: 0%;
+}
+p.project_text {
+	margin: 1% 0%;
+	text-align: left;
+}
+div.process_step {
+	@include default-type;
+	justify-content: space-evenly;
+	width: 85%;
+	margin-bottom: 3%;
+}
+.process_showcase {
+	width: 45%;
+	min-width: 12em;
+	flex-grow: 1;
+	padding: 1%;
+	>.project_text {
+		color: $black;
+		font-size: 15px;
+	}
+}
+.step {
+	>p.challenge {
+		margin-bottom: 0%;
+	}
+}
+footer {
+	color: $black;
+}
+a.footerLink {
+	color: $black;
+	&:hover {
+		color: $black;
+	}
+}
+@media only screen and (max-width:675px) {
+	li.project_heading {
+		font-size: 50px;
+	}
+	div.project {
+		>ul {
+			padding: 0%;
+		}
+	}
+	li.menu {
+		>a {
+			font-size: 20px;
+		}
+	}
+}
+@media only screen and (max-width:450px) {
+	li.project_heading {
+		font-size: 30px;
+	}
+	div.project_nav {
+		display: none;
+	}
+	.mobile_menu {
+		display: flex;
+	}
+	.sidenav {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: #111;
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 60px;
+		a {
+			font-family: "PT Mono";
+			padding: 8px 8px 8px 32px;
+			text-decoration: none;
+			font-size: 25px;
+			color: #818181;
+			display: block;
+			transition: 0.3s;
+			&:hover {
+				color: #f1f1f1;
+			}
+		}
+		.closebtn {
+			position: absolute;
+			top: 0;
+			right: 25px;
+			font-size: 36px;
+			margin-left: 50px;
+		}
+	}
+	#main {
+		transition: margin-left .5s;
+		padding: 16px;
+		>span {
+			font-size: 30px;
+			cursor: pointer;
+			font-family: "PT Mono";
+		}
+	}
+}

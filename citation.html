@@ -1,50 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>P03 Portfolio - Citation</title>
+        <title>P03 Portfolio - Project</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/main.css" title="sytle" type="text/css" media="all"/>
+        <link rel="stylesheet" href="css/project_layout.css" title="sytle" type="text/css" media="all"/>
+        <link rel="stylesheet" href="css/citation_layout.css" title="sytle" type="text/css" media="all"/>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0s">
 
         <!-- add new google font -->
-        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=PT_Mono' rel='stylesheet'>
+        <link href='//fonts.googleapis.com/css?family=PT+Serif+Caption' rel='stylesheet'>
+
+        <!-- add library -->
+        <link href="css/aos.css" rel="stylesheet">
     </head>
 
     <body>
-        <header> <!-- begin of Header nav -->
-            <h1>P03 Portfolio - Citation</h1>
-
-            <div class="main_nav">
+        <header> 
+            <!-- begin of Header nav -->
+            <div class="project_nav">
                 <nav>
                     <ul>
                         <li class="menu"><a href="index.html">HOME</a></li>
-                        <li class="menu"><a href="bio.html">BIO</a></li>
-                        <li class="menu"><a href="project.html">PROJECTS</a></li>
-                        <li class="menu"><a href="citation.html">CITATIONS</a></li>
+                        <li class="menu"><a href="project.html">PROJECT#1</a></li>
+                        <li class="menu"><a href="project2.html">PROJECT#2</a></li>
+                        <li class="menu"><a href="index.html#contact_elements">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
+            <!-- end of Header nav -->
 
+            <!-- begin of mobile nav -->
+            <div class="mobile_menu">
+                <div id="main">
+                    <span onclick="openNav()">&#9776; Menu</span>
+                </div>
+
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">HOME</a>
+                    <a href="project.html">PROJECT#1</a>
+                    <a href="project2.html">PROJECT#2</a>
+                    <a href="index.html#contact_elements">CONTACT</a>
+                </div>
+            </div>
+            <!-- end of mobile nav -->
+
+            <div class="project">
+                <ul>
+                    <li class="project_heading"><span>CITATIONS</span></li>
+                </ul>
+            </div>
         </header> <!-- end of Header nav -->
 
-        <!-- START OF Citations SECTION // -->
-        <section id="citations" class="main_section">
-            <h2 class="section_heading">Citations</h2>
 
-            <ul>   
-                <li>Indian Type Foundry. Designer. (n.d.). <strong>Poppins [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Poppins?query=Poppins&selection.family=Roboto#standard-styles">https://fonts.google.com/specimen/Poppins?query=Poppins&selection.family=Roboto#standard-styles</a></li>
-                <li>Robertson, Christian. Designer. (n.d.). <strong>Roboto Slab [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Roboto+Slab?preview.text=PORTFOLIO&preview.text_type=custom&category=Serif,Display,Handwriting,Monospace#standard-styles">https://fonts.google.com/specimen/Roboto+Slab?preview.text=PORTFOLIO&preview.text_type=custom&category=Serif,Display,Handwriting,Monospace#standard-styles</a></li>
-                <li>Robertson, Christian. Designer. (n.d.). <strong>Roboto [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Roboto?query=robo&selection.family=Roboto#standard-styles">https://fonts.google.com/specimen/Roboto?query=robo&selection.family=Roboto#standard-styles</a></li>
-                <li>Trovato, G. Photographer. 2020. <strong>[Photo]</strong>. Retrieved from <a href="https://unsplash.com/photos/PdtApuzR_IQ">https://unsplash.com/photos/PdtApuzR_IQ</a>.</li>
-                <!-- <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li> -->
-            </ul>
+        <!-- START OF OVERVIEW SECTION // -->
+        <section id="overview" class="main_section">
 
+            <section class="element">
+                <ul>
+                    <li>Dmitri,V. Creator. (n.d.). <strong>typeWriter.js</strong>. Retrieved from <a href="https://codepen.io/voronianski/pen/aicwk">https://codepen.io/voronianski/pen/aicwk</a></li>
+                    <li>Michalsnik. Creator. 2018. <strong>AOS - Animate On Scroll Library</strong>. Retrieved from <a href="http://michalsnik.github.io/aos/">http://michalsnik.github.io/aos/</a></li>
+                    <li>ParaType. Designer. (n.d.). <strong>PT Mono [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/PT+Mono?query=PT+Mono#standard-styles">https://fonts.google.com/specimen/PT+Mono?query=PT+Mono#standard-styles</a></li>
+                    <li>ParaType. Designer. (n.d.). <strong>PT Serif Caption [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/PT+Serif+Caption?query=PT+Serif+Caption#standard-styles">https://fonts.google.com/specimen/PT+Serif+Caption?query=PT+Serif+Caption#standard-styles</a></li>
+                    <li>W3Schools.com. 1999-2020. <strong>Sidenav Push Example</strong>. Retrieved from <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_push">https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_push</a>.</li>
+                    <li>Zhou,Y. Designer. 2020. <strong>Project 1 - Infographic [Unpublished assignment submitted for IAT 235]</strong>.</li>
+                    <li>Zhou,Y. Designer. 2020. <strong>Project 2 - Gamut Record Webpages [Unpublished assignment submitted for IAT 339]</strong>.</li>
+                </ul>
+            </section>
         </section>
-        <!-- END OF Assemble Brand Components SECTION // -->
+        <!-- END OF OVERVIEW SECTION // -->
 
+        <footer>
+            <h4> @ JO ZHOU</h4>
+            <p> All COPYRIGHT RESERVED.</p>
+            <p class="footerFont">
+                <a class="footerLink" href="style_guide.html">Style Guide</a>
+                <span> &#183;</span> 
+                <a class="footerLink" href="citations.html">Citations</a>
+                <span> &#183;</span> 
+                <a class="footerLink" href="https://github.com/jojo-mee/portfolio">GitHub</a>
+            </p>
+        </footer>
+
+        <script src="js/aos.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="js/main.js"></script>
+        
     </body>
 
 </html>

@@ -202,3 +202,8 @@ div.process_step{
     margin-bottom: 0%;
 }
 
+footer,
+a.footerLink,
+a.footerLink:hover{
+    color:#303030;
+}

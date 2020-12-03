@@ -9,6 +9,10 @@ body {
     overflow-x: hidden;
 }
 
+.main_section{
+    overflow-x: hidden;
+}
+
 a {
     color: #F6ECCF;
 }
